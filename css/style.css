@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eeeeee;
+  height: 10vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 90%;
+  /* border:1px solid red;*/
+  margin: auto auto;
+}
+
+input {
+  height: 80px;
+  font-size: 2rem;
+  width: 80%;
+  padding-left: 10%;
+}
+
+button.add {
+  width: 20%;
+  cursor: pointer;
+  background: rgb(0, 4, 128);
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 80px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.add {
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  /* border:1px solid blue;*/
+  padding-top: 40px;
+  padding-bottom: 2.5em;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 80px;
+  width: 100%;
+  box-shadow: 5px 10px 20px #b7b7b7;
+  margin-bottom: 2%;
+  cursor: pointer;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.item.clicado {
+  background: #d4f6d9;
+}
+
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item-icone {
+  flex: 20%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-nome {
+  flex: 55%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 25%;
+}
+
+.delete {
+  background: rgb(182, 2, 2);
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mdi-check-circle {
+  color: green;
+}
+
+footer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: black;
+  height: 40px;
+  width: 100%;
+  color:azure;
+  margin-top: 2em;
+}
+
+  /* CONFIGS DO MODO ESCURO */
+.dark-mode {
+  background-color: rgb(4, 5, 19);
+}
+
+.dark-mode h1 {
+  background-color: rgb(4, 5, 19);
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .item {
+  box-shadow: none;
+}
+
+.dark-mode button.add {
+  background: rgb(48, 52, 180);
+}
+
+.dark-mode button.delete {
+  background: rgb(180, 57, 48);
+}
+
+
+  /* BOTÃO TOGGLE */
+
+.check-box {
+	transform: scale(0.5);
+}
+
+input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"] {
+    background: #7da6ff;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::after {
+    left: 50%;
+}
+
+.dmText {
+  text-align: center;
+  color: rgb(4, 5, 19);
+  font-weight: bold;
+  margin: 0 0;
+  font-size: 1.3em;
+}
