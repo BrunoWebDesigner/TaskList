@@ -48,6 +48,5 @@ To get started with the project, follow these steps:
    ```bash
    git clone https://github.com/BrunoWebDesigner/TaskList.git
    ```
-![Testing](https://github.com/user-attachments/assets/1b8498eb-4f2b-427f-a882-ebdfabfc261b)
 
    
